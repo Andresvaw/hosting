@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-all {
+  display: flex;
+  flex-flow: column nowrap;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+}
+/* Barra de navegación */
+  .container-navbar-flex {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0 9%;
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+    z-index: 1000;
+  }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .logo a {
+        height: 35px;
+      }
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+      .navbar a {
+        color: rgb(32, 32, 32);
+        padding: 0.8rem 0.8rem;
+        text-transform: uppercase;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+      }
+      .navbar a:hover {
+        background-color: white;
+        color: rgb(41, 210, 41);
+        border-bottom: 3px solid rgb(41, 210, 41);
+      }
+/* Fin de la barra de navegación */
+
+  .container-main-flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 9%;
+  }
+    .container-main {
+      display: flex;
+      flex-flow: column;
+      max-width: 1174px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background: rgb(255, 255, 255);
+    }
+
+      @media (max-width: 1035px){
+        .container-main-flex .img-tema img {
+          display: none;
+        }
+      }
+
+      @media (max-width: 695px) {
+        .container-main-flex .container-text h1 {
+          font-size: 2.6rem;
+          margin-top: 25px;
+        }
+      }
+
+  .container-footer-flex {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 0 14px;
+    z-index: 2;
+  }
+    .container-footer {
+      display: flex;
+      color: white;
+      max-width: 1174px;
+      width: 100%;
+      height: 100%;
+      justify-content: end;
+      align-items: center;
+      margin: 0 auto;
+    }

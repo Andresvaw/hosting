@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-ciclo-software {
+  display: flex;
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+  .violeta {
+    background-color: rgb(236, 99, 248);
+  }
+  .introduccion {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 587px;
+    padding: 50px 20px;
+  }
+    .introduccion h1 {
+      margin: 20px 0;
+    }
+    .introduccion p {
+      text-align: justify;
+
+    }
+  .img-tema {
+    display: flex;
+    width: 587px;
+    height: 250px;
+    margin: 20px 0;
+  }
+  .img-tema img {
+    display: flex;
+    width: 500px;
+    border-radius: 25px;
+  }
+  .fases {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 50px 20px;
+  }
+    .fases p {
+      text-align: justify;
+    }
+    .titulo {
+      display:flex;
+      justify-content: center;
+    }
+    .titulo h1 {
+      background-color: rgb(129, 248, 99);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .container-text-img {
+      display: flex;
+      flex-flow: row;
+      margin-top: 50px;
+      padding: 0 50px;
+      border-top: 1px solid black;
+    }
+    .container-text-izq {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 587px;
+      padding: 75px 50px 50px 50px;
+    }
+      .container-text-izq h2 {
+        margin: 10px 0;
+      }
+    .container-img-izq {
+      display: flex;
+      justify-content: start;
+      width: 587px;
+      height: 250px;
+    }
+      .container-img-izq img {
+        border-radius: 10px;
+      }
+      
+      .container-text-der {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 587px;
+        padding: 80px 80px 50px 0;
+      }
+        .container-text-der h2 {
+          margin: 10px 0;
+        }
+      .container-img-der {
+        display: flex;
+        justify-content: start;
+        width: 587px;
+        height: 250px;
+        padding-left: 40px;
+      }
+        .container-img-der img {
+          border-radius: 10px;
+        }
+

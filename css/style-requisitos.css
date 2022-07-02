@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-requisitos {
+  display: flex;
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  background-color: rgb(129, 248, 99);
+}
+  .introduccion {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 587px;
+    padding: 50px 20px;
+  }
+    .introduccion h1 {
+      margin: 20px 0;
+    }
+    .introduccion p {
+      text-align: justify;
+
+    }
+  .img-tema {
+    display: flex;
+    width: 587px;
+    height: 250px;
+    margin: 20px 0;
+  }
+  .img-tema img {
+    display: flex;
+    width: 500px;
+    border-radius: 25px;
+  }
+
+  .container-clases-requisitos {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+    .titulo h1 {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgb(236, 99, 248);
+    }
+  .container-text-img {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 50px 0;
+  }
+    .container-text {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 587px;
+      margin: 50px;
+    }
+      .container-text p {
+        text-align: justify;
+      }
+      .container-text h2 {
+        margin: 10px 0;
+      }
+      .forma-subtitulo {
+        display: flex;
+      }
+        #sub1 {
+          background-color: rgb(251, 86, 86);
+          padding: 10px;
+          border-radius: 10px;
+        }
+
+        #sub2 {
+          background-color: rgb(251, 199, 86);
+          padding: 10px;
+          border-radius: 10px;
+        }
+    .container-img {
+      display: flex;
+      width: 587px;
+    }
+      .container-img img {
+        width: 400px;
+        height: 250px;
+        border-radius: 20px;
+      }
