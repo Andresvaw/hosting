@@ -6,7 +6,7 @@
   background-position: center center;
   background-attachment: fixed;
   width: 100%;
-  height: 37rem;
+  height: 80vh;
   margin-bottom: 1.5rem;
 }
   .hero-page img {
@@ -28,6 +28,7 @@
   .hero-text h2 {
     color: white;
     font-size: 2rem;
+    text-align: center;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
   }
 .container-tema {
@@ -132,3 +133,9 @@
       margin-top: 0px;
     }
 /* Fin temas */
+@media (max-width: 400px){
+  .hero-text {
+    font-size: 100px;
+    color: red;
+  }
+}
