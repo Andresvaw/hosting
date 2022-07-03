@@ -134,7 +134,7 @@
     }
 /* Fin temas */
 @media (max-width: 400px){
-  .hero-text {
+  .hero-text h1 {
     font-size: 100px;
     color: red;
   }
