@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  padding: 0.9rem;
   width: 100%;
   height: 80vh;
   margin-bottom: 1.5rem;
@@ -20,7 +21,7 @@
   align-items: center;
 }
   .hero-text h1 {
-    color: red;
+    color: white;
     font-size: 6rem;
     margin: 1rem 0;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -36,8 +37,8 @@
   flex-flow: row;
   width: 100%;
   height: 400px;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   padding: 50px; 
   border-radius: 25px;
 }
@@ -56,7 +57,6 @@
     font-size: 1rem;
     text-align: justify;
   }
-  
   .bton {
     display: flex;
     align-items: center;
@@ -88,13 +88,13 @@
 .sistemas-operativos {
   background-color: rgb(122, 255, 140);
 }
-  .text-verde {
+  .text-so {
     color: rgb(0, 105, 5);
   }
   
 /* Tema Ciclo del software */
-.ciclo-software {
-  background-color: rgb(236, 99, 248);
+.redes {
+  background-color: rgba(236, 99, 248, 0.73);
 }
   .text-violeta {
     color: rgb(224, 21, 243);
@@ -103,7 +103,7 @@
     background-color: yellow;
   }
 /* Tema requisitos */
-.requisitos {
+.teoria-sistemas {
   background-color: rgb(248, 216, 99);
 }
   .text-amarillo {
@@ -133,9 +133,84 @@
       margin-top: 0px;
     }
 /* Fin temas */
-@media (max-width: 400px){
-  .hero-text h1 {
-    font-size: 100px;
-    color: red;
+@media (max-width: 1190px){
+  .img-tema {
+    display: none;
   }
+  .sistemas-operativos {
+    background-color: rgb(255, 76, 36);
+  }
+    .text-so {
+      color: rgb(97, 18, 2);
+    }
+  .container-main {
+    padding: 5% 15%;
+    align-items: center;
+  }
+  .container-tema {
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    margin: 0.5rem;
+  }
+    .cuadrado {
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 632px;
+    }
+    .container-text {
+      display: none;
+    }
+    .bton {
+      display: none;
+    }
+    .container-text h1 {
+      margin-top: 1.5rem;
+      justify-content: center;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .container-bton {
+      display: flex;
+      justify-content: center;
+    }
+    .sistemas-operativos {
+      background-image: url(../img/sistemas-operativos.png);
+      background-size: 300px 200px;
+    }
+    .redes {
+      background-image: url(../img/redes.jpeg);
+      background-size: 300px 200px;
+    }
+    .teoria-sistemas {
+      background-image: url(../img/teoria-g.jpg);
+      background-size: 300px 200px;
+    }
+    .ingenieria-requisitos {
+      background-image: url(../img/p-principal/imagen-1.jpg);
+      background-size: 400px 200px;
+      background-position: center center;
+    }
+}
+
+@media (max-width: 920px) {
+  .cuadrado {
+    width: 316px;
+  }
+  .container-tema {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 376px){
+  .hero-text h1{
+    font-size: 4rem;
+  }
+  .hero-text h2{
+    font-size: 1.25rem;
+  }
+
 }
