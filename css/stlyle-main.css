@@ -20,7 +20,7 @@
   align-items: center;
 }
   .hero-text h1 {
-    color: white;
+    color: red;
     font-size: 6rem;
     margin: 1rem 0;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
