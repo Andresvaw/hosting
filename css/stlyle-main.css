@@ -161,6 +161,7 @@
   }
   .container-temas {
     padding: 0;
+    text-aling: center;
     width: 300px;
     height: 200px;
     justify-content: center;
