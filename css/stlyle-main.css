@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  padding: 0.9rem;
   width: 100%;
   height: 80vh;
   margin-bottom: 1.5rem;
@@ -32,6 +31,9 @@
     text-align: center;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
   }
+  .titulos {
+    display: none;
+  }
 .container-tema {
   display: flex;
   flex-flow: row;
@@ -56,6 +58,9 @@
   .container-text p {
     font-size: 1rem;
     text-align: justify;
+  }
+  .container-temas {
+    display: none;
   }
   .bton {
     display: flex;
@@ -137,6 +142,10 @@
   .img-tema {
     display: none;
   }
+  .titulos {
+    display: flex;
+    justify-content: center;
+  }
   .sistemas-operativos {
     background-color: rgb(255, 76, 36);
   }
@@ -148,6 +157,9 @@
     align-items: center;
   }
   .container-tema {
+    display: none;
+  }
+  .container-temas {
     padding: 0;
     width: 300px;
     height: 200px;
@@ -171,26 +183,42 @@
       margin-top: 1.5rem;
       justify-content: center;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5em;
     }
     .container-bton {
       display: flex;
       justify-content: center;
     }
-    .sistemas-operativos {
-      background-image: url(../img/sistemas-operativos.png);
+    .system-op {
+      display: flex;
+      width: 300px;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../img/sistemas-operativos.png);
       background-size: 300px 200px;
     }
-    .redes {
-      background-image: url(../img/redes.jpeg);
+    .cuadrado h2 {
+      color: whitesmoke;
+      text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+    .red {
+      display: flex;
+      width: 300px;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../img/redes.jpeg);
       background-size: 300px 200px;
     }
-    .teoria-sistemas {
-      background-image: url(../img/teoria-g.jpg);
+    .teory-system {
+      display: flex;
+      width: 300px;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../img/teoria-g.jpg);
       background-size: 300px 200px;
     }
-    .ingenieria-requisitos {
-      background-image: url(../img/p-principal/imagen-1.jpg);
+    .inge-requisitos {
+      display: flex;
+      width: 300px;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../img/p-principal/imagen-1.jpg);
       background-size: 400px 200px;
       background-position: center center;
     }
@@ -198,19 +226,19 @@
 
 @media (max-width: 920px) {
   .cuadrado {
-    width: 316px;
+    width: 300px;
   }
-  .container-tema {
+  .container-temas {
     margin: 1.5rem 0;
   }
 }
 
 @media (max-width: 600px){
   .hero-text h1{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
   .hero-text h2{
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
 }
